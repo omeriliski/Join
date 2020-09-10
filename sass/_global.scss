@@ -1,0 +1,23 @@
+body{
+    background:url("../images/alesia-kazantceva-XLm6-fPwK5Q-unsplash1.png"),rgba(0,0,0,0.5);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.container{
+    height:100vh;
+    // border: 4px solid red;
+    display: grid;
+    //grid-template-columns: repeat(4,1fr);
+    // grid-template-rows: 50px auto 50px;
+    // gap:15px;
+    //grid-auto-flow:column;
+    grid-template-areas:
+            "navbarleft navbarleft navbarright navbarright"
+            "sidebar sidebar sidebar sidebar"
+            "footer footer footer footer";
+}
+.item{
+    height:200px;
+    display: flex;
+}

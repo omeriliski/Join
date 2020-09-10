@@ -1,0 +1,93 @@
+* {
+  margin: 0; }
+
+body {
+  background: url("../images/alesia-kazantceva-XLm6-fPwK5Q-unsplash1.png"), rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: multiply; }
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "navbarleft navbarleft navbarright navbarright" "sidebar sidebar sidebar sidebar" "footer footer footer footer"; }
+
+.item {
+  height: 200px;
+  display: flex; }
+
+.container__logo {
+  height: 10vh;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: navbarleft;
+  border-bottom: 1px solid lightgray; }
+  .container__logo img {
+    width: 50%;
+    height: auto; }
+.container__menu {
+  height: 10vh;
+  grid-area: navbarright;
+  justify-content: flex-end;
+  border-bottom: 1px solid lightgray; }
+  .container__menu ul {
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    margin: 15px;
+    list-style: none; }
+    .container__menu ul li {
+      display: inline;
+      margin: 20px; }
+      .container__menu ul li:first-child a {
+        text-decoration: none;
+        font-size: x-large;
+        color: white; }
+        .container__menu ul li:first-child a:hover {
+          text-decoration: underline; }
+      .container__menu ul li:last-child a {
+        text-decoration: none;
+        font-size: x-large;
+        color: orangered; }
+        .container__menu ul li:last-child a:hover {
+          text-decoration: underline; }
+
+.container__header {
+  justify-content: center;
+  align-items: flex-start;
+  grid-area: sidebar; }
+  .container__header h1 {
+    text-transform: uppercase;
+    font-family: 'Modak', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6rem;
+    line-height: 81px;
+    color: #ffffff; }
+.container__section {
+  grid-area: footer;
+  justify-content: flex-end;
+  margin-right: 20%; }
+  .container__section ul {
+    min-width: 340px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    width: 30%; }
+    .container__section ul li {
+      margin: 10px 15px;
+      list-style: circle;
+      padding: 10px; }
+
+.container__section--list li {
+  border: 1px solid red;
+  list-style-type: circle; }
+
+@media screen and (max-width: 600px) {
+  .container__header h1 {
+    text-align: center; }
+  .container__section {
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto; } }
+
+/*# sourceMappingURL=figma.css.map */
